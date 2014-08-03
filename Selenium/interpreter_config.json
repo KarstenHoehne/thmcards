@@ -3,6 +3,7 @@
 	"configurations": [
 	{
 		"settings": [
+		{
 			"driverOptions": {
 				"host": "ondemand.saucelabs.com",
 				"port": 80
@@ -13,6 +14,7 @@
 				"accessKey": "${SAUCE_ACCESS_KEY}",
 				"tunnel-identifier": "${TRAVIS_JOB_NUMBER}"
 			}
+		}
 		],
 		"scripts": [
 			"Selenium/SeleniumTest.json"
