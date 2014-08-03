@@ -3,8 +3,28 @@ THMcards
 
 THMcards ist eine digitale Neuauflage eines klassischen Lerninstruments. Der Service bietet Studenten einen modernen und intuitiven Zugang zu einer der nachweislich erfolgreichsten Lernmethoden. THMcards wird als moderne Single­Page­Application entwickelt und legt in der ersten Ausbaustufe den Fokus auf Desktop­-Browser.
 
-
 Installationsanleitung
+----------------------
+
+Diese ersion von THM Cards enthält ein vagrantfile.
+
+Wenn man im Verzeichnis thmcards folgenden Befehl absetzt:
+'vagrant up'
+
+wird eine virtuelle maschine gestartet, die bereits couchdb und nodejs enthält.
+Leider fürht npm install auf der VM oft zu abstürzen, weshalb npm install auf der VM nicht ausgeführt werden sollte. Um die benötigten HodeJS Module zu installieren, empfiehlt es sich auf der Host Maschine nodejs zu installieren und im thmcards Ordner folgenden Befehl auszuführen:
+'npm install --loglevel info --no-bin-links'
+
+danach kann man per 'vagrant ssh' auf die VM zugreifen. Um dort die CouchDB zu initialisieren muss man das Script "init.sh" ausführen.
+'./init.sh'
+
+Danach lässt sich THM-Cards per Script "start.sh" starten.
+'./start.sh'
+
+
+Im folgenden ist die ursprüngliche Installationsanleitung für THM-cards OHNE VM aufgeführt.
+
+Installationsanleitung - Alternative
 ----------------------
 
 THMcards benötigt zum Betrieb eine Installation von *node.js*, sowie als Datenbankmangementsystem *CouchDB*.
