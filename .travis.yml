@@ -1,0 +1,9 @@
+language: node_js
+before_script:
+	- "npm install -g se-interpreter"
+script:
+	- "se-interpreter interpreter_config.json"
+env:
+	global:
+		-SAUCE_USERNAME=KarstenHoehne
+		- secure: "aFuN6Fcfsifhm3ObYm4W5Qlnvd8Fbz4nItQKvSflskZsltOQo1AcBL0bEEOeWKWwx74ab7S0Q25OSqRtKc36p8uRvWbNPEUFxyQdloGOCPQZh9btsAqAqfxW7/DysJP3IrN7ap7ctMLajVmjclAYji0GtXCA+PUY9tY8S9RwtSo="
