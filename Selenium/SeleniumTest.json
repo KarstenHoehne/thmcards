@@ -9,7 +9,7 @@
     },
     {
       "type": "waitForTextPresent",
-      "text": "Was ist THMcards?"
+      "text": "About THMcards"
     },
     {
       "type": "clickElement",
