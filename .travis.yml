@@ -1,4 +1,8 @@
 language: node_js
+before_script:
+- 'npm install -g se-interpreter'
+script:
+- 'se-interpreter Selenium/interpreter_config.json'
 node_js:
 - '0.11'
 - '0.10'
