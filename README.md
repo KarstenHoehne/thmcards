@@ -6,20 +6,24 @@ THMcards ist eine digitale Neuauflage eines klassischen Lerninstruments. Der Ser
 Installationsanleitung
 ----------------------
 
-Diese ersion von THM Cards enthält ein vagrantfile.
+Diese Version von THM Cards enthält ein vagrantfile.
 
 Wenn man im Verzeichnis thmcards folgenden Befehl absetzt:
-'vagrant up'
+
+`vagrant up`
 
 wird eine virtuelle maschine gestartet, die bereits couchdb und nodejs enthält.
 Leider fürht npm install auf der VM oft zu abstürzen, weshalb npm install auf der VM nicht ausgeführt werden sollte. Um die benötigten HodeJS Module zu installieren, empfiehlt es sich auf der Host Maschine nodejs zu installieren und im thmcards Ordner folgenden Befehl auszuführen:
-'npm install --loglevel info --no-bin-links'
+
+`npm install --loglevel info --no-bin-links`
 
 danach kann man per 'vagrant ssh' auf die VM zugreifen. Um dort die CouchDB zu initialisieren muss man das Script "init.sh" ausführen.
-'./init.sh'
+
+`./init.sh`
 
 Danach lässt sich THM-Cards per Script "start.sh" starten.
-'./start.sh'
+
+`./start.sh`
 
 
 Im folgenden ist die ursprüngliche Installationsanleitung für THM-cards OHNE VM aufgeführt.
