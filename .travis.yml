@@ -3,6 +3,8 @@ before_script:
 	- "npm install -g se-interpreter"
 script:
 	- "se-interpreter interpreter_config.json"
+addons:
+	sauce_connect: true
 env:
 	global:
 		- SAUCE_USERNAME=KarstenHoehne
