@@ -8,12 +8,12 @@ class cards {
 	$base_path = "/vagrant"
 	$server_path = "$base_path/thm-cards"
 
-	git::repo { "thm-cards":
-		path => $server_path,
-		source => "https://github.com/KarstenHoehne/thmcards",
-		owner => "vagrant",
-		group => "vagrant"
-	}
+#	git::repo { "thm-cards":
+#		path => $server_path,
+#		source => "https://github.com/KarstenHoehne/thmcards",
+#		owner => "vagrant",
+#		group => "vagrant"
+#	}
 	
 	file {"/home/vagrant/init.sh":
 		ensure => present,
