@@ -4,9 +4,8 @@ THM-Cards
 to install all needed node modules:
 install nodejs and npm on your HOST machine
 on your HOST Machine:
-go into the vagrant directory of this machine
-go into the thm-cards directory
-run npm install --loglevel info --no-bin-links
+go into the thmcards directory
+run: npm install --loglevel info --no-bin-links
 
 (npm can cause problems when run from a vagrant machine,
 running from your host will be safer)
