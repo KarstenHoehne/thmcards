@@ -12,8 +12,8 @@ Wenn man im Verzeichnis thmcards folgenden Befehl absetzt:
 
 `vagrant up`
 
-wird eine virtuelle maschine gestartet, die bereits couchdb und nodejs enthält.
-Leider fürht npm install auf der VM oft zu abstürzen, weshalb npm install auf der VM nicht ausgeführt werden sollte. Um die benötigten HodeJS Module zu installieren, empfiehlt es sich auf der Host Maschine nodejs zu installieren und im thmcards Ordner folgenden Befehl auszuführen:
+wird eine virtuelle Maschine gestartet, die bereits couchdb und nodejs enthält.
+Leider führt npm install auf der VM oft zu abstürzen, weshalb npm install auf der VM nicht ausgeführt werden sollte. Um die benötigten NodeJS Module zu installieren, empfiehlt es sich auf der Host Maschine nodejs zu installieren und im thmcards Ordner folgenden Befehl auszuführen:
 
 `npm install --loglevel info --no-bin-links`
 
