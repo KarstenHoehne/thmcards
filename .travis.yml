@@ -1,11 +1,10 @@
 language: node_js
-before_script:
-	- "npm install --loglevel info -g se-interpreter"
-script:
-	- "se-interpreter Selenium/interpreter_config.json"
-addons:
-	sauce_connect: true
+node_js:
+- '0.11'
+- '0.10'
 env:
-	global:
-		- SAUCE_USERNAME=KarstenHoehne
-		- secure: "aFuN6Fcfsifhm3ObYm4W5Qlnvd8Fbz4nItQKvSflskZsltOQo1AcBL0bEEOeWKWwx74ab7S0Q25OSqRtKc36p8uRvWbNPEUFxyQdloGOCPQZh9btsAqAqfxW7/DysJP3IrN7ap7ctMLajVmjclAYji0GtXCA+PUY9tY8S9RwtSo="
+  global:
+  - secure: c8Ayag/g86hsQErtL1/RUSPEDzOsFh8jaVxrcjnxh08cTM1gxpjlkQ/fZQveF7GiLBRqTEmG00kxPYp/j7R20uqPjcMC2A/mGCp3BG3lIRahFxqRK18pXXXc04UESMEgUrBQMYsBQ7boDchq5hizi5l6f6+/t5QVrwuXndvRwsc=
+  - secure: NR7c9kLebol4YLORtgEMoxKEPmtcywaHxNUyHl+0I7WKIopSxMAsM4qeghPtvEVrmoNZmuv6xy4HqWrFfRgHaMEIdIlOvTK30AbxotyJFgmY1zkWkUZ6QnXfDCgFIZ5FSxAcCv5i3/kHSj2eqFMCC9PclCKKX5pcgQTOby2Wjmo=
+addons:
+  sauce_connect: true
