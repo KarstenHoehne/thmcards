@@ -1,6 +1,6 @@
 language: node_js
 before_script:
-	- "npm install -g se-interpreter"
+	- "npm install --loglevel info -g se-interpreter"
 script:
 	- "se-interpreter Selenium/interpreter_config.json"
 addons:
