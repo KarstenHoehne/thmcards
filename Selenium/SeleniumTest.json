@@ -15,7 +15,7 @@
       "type": "clickElement",
       "locator": {
         "type": "link text",
-        "value": "Was ist THMcards?"
+        "value": "About THMcards"
       }
     },
     {
